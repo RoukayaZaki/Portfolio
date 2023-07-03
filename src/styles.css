@@ -1,0 +1,232 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    max-width: 450px;
+    text-align: justify;
+}
+
+#home {
+    background-color: rgba(240, 217, 249, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: center;
+    min-height: 80vh;
+    padding-top: 60px;
+    border-radius: 20px;
+    height: 400px;
+    width: 1600px;
+    color: #20174B;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.portrait-container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: portrait-move 2s infinite alternate;
+
+}
+
+.portrait-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes portrait-move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+/* Global styles */
+body {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start; 
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-variant: small-caps;
+
+
+    line-height: 1.6;
+    background-image: url("./../assets/background1.png");
+    background-color: #182036;
+    color: #F0D9F9;
+    background-repeat: no-repeat;
+    background-size: 1900px 950px; 
+    background-position: center top;
+    
+}
+
+header {
+    color: #182036;
+    background-color: rgba(240, 217, 249, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    position: fixed;
+    top: 0; 
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #182036;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.9); /* Set a semi-transparent background color for the main content area */
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #182036;
+    background-color: #F0D9F9;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-icons li a:hover {
+    background-color: #9663EC;
+}
+
+.install-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #182036;
+    background-color: #F0D9F9;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    
+    min-height: 75vh;
+    padding-top: 60px;
+    border-radius: 20px;
+    height: 400px;
+    width: 1600px;
+    color: #F0D9F9;
+    margin-top: 90px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+.projects-paragraph {
+    max-width: 1250px;
+    text-align: justify;
+}
+
+.project-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-item {
+  width: 300px;
+  height: 300px;
+}
+
+.project-image {
+  position: relative;
+  height: 200px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color:  rgba(255, 255, 255, 0.6);
+  color: #182036;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-details {
+  opacity: 1;
+}
+
+.description {
+    padding: 5px;
+}
+#quote {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-bottom: 20px;
+}
+.quote h3 {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
